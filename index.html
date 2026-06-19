@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusMate AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<h1>🎓 CampusMate AI</h1>
+<p>대학생 통합 일정 관리 플랫폼</p>
+
+<div class="grid">
+<div class="card"><h3>시간표</h3><input id="subject" placeholder="과목명"><button onclick="addSubject()">추가</button><ul id="subjects"></ul></div>
+
+<div class="card"><h3>과제</h3><input id="task" placeholder="과제명"><input id="taskDate" type="date"><button onclick="addTask()">추가</button><ul id="tasks"></ul></div>
+
+<div class="card"><h3>시험</h3><input id="exam" placeholder="시험명"><input id="examDate" type="date"><button onclick="addExam()">추가</button><ul id="exams"></ul></div>
+
+<div class="card"><h3>AI 추천</h3><button onclick="recommend()">오늘의 추천 보기</button><p id="rec"></p></div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
